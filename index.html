@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Nick product card">
-	<meta name="author" content="Julianka">
-	<title>Nike Product</title>
+	<meta name="description" content="Nike product">
+	<meta name="author" content="Admin">
+	<title>Nike product</title>
 
 	<link rel="icon" href="images/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -17,18 +15,17 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="container">
-		<nav class="top-navigation">
-			<a href="/" class="logo">
-				<img src="images/logo.png" alt="Nike Logo">
+	<header class="header">
+		<div class="container header__container">
+			<a href="#" class="logo">
+				<img src="images/logo.png" alt="Logo" class="logo__img">
 			</a>
-			<i class="menu-icon fas fa-bars"></i>
 			<ul class="menu">
 				<li class="menu__item">
 					<a href="#" class="menu__link">Lifestyle</a>
 				</li>
 				<li class="menu__item">
-					<a href="#" class="menu__link menu__link--active">Running</a>
+					<a href="#" class="menu__link">Running</a>
 				</li>
 				<li class="menu__item">
 					<a href="#" class="menu__link">Football</a>
@@ -37,64 +34,79 @@
 					<a href="#" class="menu__link">Skateboarding</a>
 				</li>
 			</ul>
-		</nav>
-		<div class="item">
-			<div class="item__wrap">
-				<div class="slider">
-					<div class="slider__img">
-						<img src="images/item.png" alt="Item">
-					</div>
-					<ul class="slider__thumbs">
-						<li class="slider__thumbs-item slider__thumbs-item--active">
-							<img class="slider__thumbs-img" src="images/item.png" alt="Item">
-						</li>
-						<li class="slider__thumbs-item">
-							<img class="slider__thumbs-img" src="images/item.png" alt="Item">
-						</li>
-						<li class="slider__thumbs-item">
-							<img class="slider__thumbs-img" src="images/item.png" alt="Item">
-						</li>
-					</ul>
-					<i class="slider__loop"></i> <!-- fas fa-plus -->
-				</div>
-				<div class="item-content">
-					<i class="close-btn">&times;</i>
-					<p class="item-content__badge item-content__badge--new">New</p>
-					<h2 class="item-content__title">
-						The <span class="item-content__title-cover">running</span> has just begun
-					</h2>
-					<div class="item-content__description-wrap">
-						<p class="item-content__model">Huarache</p>
-						<ul class="rating">
-							<li class="rating__item rating__item--full"></li>
-							<li class="rating__item rating__item--full"></li>
-							<li class="rating__item rating__item--full"></li>
-							<li class="rating__item rating__item--full"></li>
-							<li class="rating__item"></li>
-						</ul>
-						<div class="rating-half">
-							<div style="width: 70%"></div>
+			<div class="burger-menu">
+				<i class="burger-menu__stick"></i>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<div class="container">
+			<div class="content__container">
+				<div class="wrapper">
+					<div class="gallery">
+						<div class="gallery__img" data-title="Huarache">
+							<img src="images/snickers.png" alt="Huarache" class="gallery__main-img">
 						</div>
-					</div>
-					<p class="item-content__price">$ 200</p>
-					<div class="size">
-						<p class="size__title">Size</p>
-						<ul class="size__items">
-							<li class="size__item">7</li>
-							<li class="size__item">8</li>
-							<li class="size__item">9</li>
-							<li class="size__item size__item--active">10</li>
-							<li class="size__item">11</li>
+
+						<ul class="gallery__list">
+							<li class="gallery__item gallery__item--active">
+								<img src="images/gallery-1.jpg" alt="Gallery" class="gallery__pic">
+							</li>
+
+							<li class="gallery__item">
+								<img src="images/gallery-2.jpg" alt="Gallery" class="gallery__pic">
+							</li>
+
+							<li class="gallery__item">
+								<img src="images/gallery-3.jpg" alt="Gallery" class="gallery__pic">
+							</li>
 						</ul>
+
+						<i class="gallery__zoom"></i>
 					</div>
-					<div class="button button--violet">Add to cart</div>
-					<div class="button">Wishlist</div>
+
+					<div class="info">
+						<i class="close">&times;</i>
+
+						<span class="info__label info__label--yellow">New</span>
+
+						<h1 class="info__title">
+							The 
+							<span class="info__title-mark">running</span>
+							<br/>has just begun
+						</h1>
+
+						<div class="brand">
+							<p class="brand__name">Huarache</p>
+							<ul class="star">
+								<li class="star__item">&starf;</li>
+								<li class="star__item">&starf;</li>
+								<li class="star__item">&starf;</li>
+								<li class="star__item">&starf;</li>
+								<li class="star__item">&star;</li>
+							</ul>
+						</div>
+
+						<p class="info__price">$200</p>
+
+						<div class="size">
+							<p class="size__title">Size</p>
+
+							<ul class="size__list">
+								<li class="size__item">7</li>
+								<li class="size__item">8</li>
+								<li class="size__item">9</li>
+								<li class="size__item size__item--active">10</li>
+								<li class="size__item">11</li>
+							</ul>
+						</div>
+
+						<div class="button button--violet">Add to cart</div>
+						<div class="button">Wishlist</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-<!-- LiveReload Script -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</main>
 </body>
 </html>
